@@ -1,17 +1,17 @@
-def add(a):
-    su=0
-    temp=a
+def add(n):
+    s=0
+    d=n
     while True:
-        su=0
-        while temp>0:
-            r=temp%10
-            su+=r
-            temp//=10
-        if su<10:
-            return su
+        s=0
+        while d>0:
+            r=d%10
+            s+=r
+            d//=10
+        if s<10:
+            return s
         else:
-            temp=su
-            su=0
+            d=s
+            s=0
             continue
 a=int(input())
 res=add(a)
