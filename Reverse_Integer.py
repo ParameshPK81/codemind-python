@@ -15,4 +15,3 @@ if n<0:
         n=n//10
     r=-1*r
     print(r)
-    
