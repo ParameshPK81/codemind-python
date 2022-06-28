@@ -1,18 +1,15 @@
-def add(n):
+def ad(n):
     s=0
-    d=n
-    while True:
+    while(n>0):
+        d=n%10
+        s=s+d
+        n//=10
+    if s<10:
+        return s
+    else:
+        n=s
         s=0
-        while d>0:
-            r=d%10
-            s+=r
-            d//=10
-        if s<10:
-            return s
-        else:
-            d=s
-            s=0
-            continue
-a=int(input())
-res=add(a)
-print(res)
+        return ad(n)
+n=int(input())
+print(ad(n))
+    
