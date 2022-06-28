@@ -1,5 +1,5 @@
 def ad(n):
-    s=0
+    s=0;c=0
     while(n>0):
         d=n%10
         s=s+d
