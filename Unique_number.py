@@ -14,5 +14,4 @@ res=crd(n)
 if res>0:
     print('Not Unique Number')
 else:
-    print('Unique Number');
-    
+    print('Unique Number')
